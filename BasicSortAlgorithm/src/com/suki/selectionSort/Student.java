@@ -1,4 +1,4 @@
-package com.suki.algo;
+package com.suki.selectionSort;
 
 public class Student implements Comparable<Student> {
 
