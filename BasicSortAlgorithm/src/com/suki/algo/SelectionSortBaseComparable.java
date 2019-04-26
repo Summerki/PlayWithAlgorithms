@@ -1,4 +1,4 @@
-package com.suki.selectionSort;
+package com.suki.algo;
 
 // 基于compareTo接口的选择排序
 public class SelectionSortBaseComparable {
@@ -62,7 +62,7 @@ public class SelectionSortBaseComparable {
         // 测试算法辅助函数
         int N = 20000;
         Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 10000);
-        SortTestHelper.testSort("com.suki.selectionSort.SelectionSortBaseComparable", arr);
+        SortTestHelper.testSort("com.suki.algo.SelectionSortBaseComparable", arr);
     }
 
 }

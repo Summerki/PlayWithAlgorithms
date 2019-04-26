@@ -1,4 +1,4 @@
-package com.suki.selectionSort;
+package com.suki.algo;
 
 // 选择排序
 public class SelectionSort {

@@ -1,4 +1,4 @@
-package com.suki.selectionSort;
+package com.suki.algo;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
