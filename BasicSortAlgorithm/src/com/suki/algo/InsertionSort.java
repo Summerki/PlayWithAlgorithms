@@ -18,18 +18,28 @@ public class InsertionSort {
             // 寻找arr[i]合适的插入位置
 
             // 写法1
-            for(int j = i; j > 0; j--){
-                if(arr[j].compareTo(arr[j-1]) == -1){  // 这里由于判断条件是j>0，所以无需担心越界问题
-                    swap(arr, j, j-1);
-                }else{
-                    break; // 由于插入排序i指针左边都已经排序好了，所以可以break（厉害呀）
-                }
-            }
+//            for(int j = i; j > 0; j--){
+//                if(arr[j].compareTo(arr[j-1]) == -1){  // 这里由于判断条件是j>0，所以无需担心越界问题
+//                    swap(arr, j, j-1);
+//                }else{
+//                    break; // 由于插入排序i指针左边都已经排序好了，所以可以break（厉害呀）
+//                }
+//            }
 
             // 写法2
 //            for(int j = i; j > 0 && arr[j].compareTo(arr[j - 1]) == -1; j--){
 //                swap(arr, j, j -1);
 //            }
+
+            // 写法3
+            // 前面方法缺点：每次出现前面元素比当前元素大时，都会进行一次交换操作有3次复制操作太费时间
+            // 现在改成每次出现这种情况的话只进行一次赋值操作
+            Comparable e = arr[i];
+            int j = i;
+            for(; j > 0 && arr[j - 1].compareTo(e) == 1; j--){
+                arr[j] = arr[j - 1];
+            }
+            arr[j] = e;
         }
     }
 

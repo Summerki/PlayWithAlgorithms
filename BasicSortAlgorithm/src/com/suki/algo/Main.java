@@ -6,6 +6,7 @@ public class Main {
 
     // 比较SelectionSort与InsertionSort性能差异
     // 此时插入排序比选择排序性能略低
+    // 插入排序经过优化后插入排序性能比选择排序好一些
     public static void main(String[] args) {
         int N = 20000;
         System.out.println("Test for random array, size = " + N + " , random range [0, " + N + "]");
